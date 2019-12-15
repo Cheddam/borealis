@@ -4,4 +4,4 @@ import ExampleComponent from './components/ExampleComponent';
 
 const b = new Borealis(window.borealis);
 
-b.addComponent('ExampleComponent', ExampleComponent);
+b.components.registerComponent('ExampleComponent', ExampleComponent);

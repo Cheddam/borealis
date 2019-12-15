@@ -2,13 +2,27 @@
 <html lang="en">
 <head>
     <title>Borealis Demo</title>
+
+    <link rel="stylesheet" href="/app.css">
 </head>
 
 <body>
-    <h1>Borealis Demo</h1>
+    <div id="app-container">(App loading...)</div>
 
-    <div id="app">(App loading...)</div>
-
+    <script>
+        // This would be generated from module configuration in the backend
+        window.appConfig = {
+            'Editor': [
+                '/dist/core.js',
+            ],
+            'List': [
+                '/dist/core.js',
+            ],
+            'PageList': [
+                '/dist/core.js',
+            ],
+        }
+    </script>
     <script src="/dist/app.js"></script>
 </body>
 </html>
